@@ -4,16 +4,48 @@ body {
   background: url(../img/tennis.jpeg) no-repeat center center fixed;
   origin background-size: cover;
   background-size: cover;
-  color: #262626;
+  color: #1a1a1a;
 }
 
+ul {
+  font-size: 1.35em;
+  font-weight: 400;
+  padding: 25px 25px 0 0;
+}
 
+li {
+  font-size: 1.15em;
+  font-style: italic;
+  padding-left: 30px;
+  max-width: 600px;
+}
+
+p {
+  font-size: 1.2em;
+  padding: 25px 25px 25px 0;
+}
 
 /*Class Selectors********************/
 
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bolder;
+}
 
 /*Id Selectors***********************/
 
+ #numberInput {
+   max-width: 200px;
+ }
 
+#easy-tennis {
+  max-width: 480px;
+  max-height: 320px;
+  float:right;
+  -webkit-filter:grayscale(50%);
+}
 
 /*Media Queries**********************/

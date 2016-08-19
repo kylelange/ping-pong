@@ -1,7 +1,7 @@
 // Business Logic
 var pingPongResults = [];
 var counter = function(_numberFromUser) {
-  debugger;
+  // debugger;
   for (i = 0; i <= _numberFromUser; i++) {
     if (i % 15 === 0) {
       pingPongResults.push("Ping-Pong! Aha! ");
@@ -9,8 +9,7 @@ var counter = function(_numberFromUser) {
       pingPongResults.push("Pong! ");
     } else if (i % 3 === 0) {
       pingPongResults.push("Ping! ");
-    }
-     else {
+    } else {
       pingPongResults.push(i + " ");
     }
   }
@@ -19,10 +18,10 @@ var counter = function(_numberFromUser) {
 // User Interface Logic
 $(document).ready(function(){
   $("form").submit(function(event){
-    debugger;
+    // debugger;
     event.preventDefault();
     //.toggle + css display:none here?
-    var userInput = parseInt($("input#numberInput").val());  //does this need parseInt?
+    var userInput = parseInt($("input#numberInput").val());
     counter(userInput);
     console.log(pingPongResults);
     $("#result").prepend(pingPongResults);
