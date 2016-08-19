@@ -1,16 +1,18 @@
 // Business Logic
-//will need a global Array = []; below
 var pingPongResults = [];
 //for loop here w medulos = if else statements
 
 // User Interface Logic
 $(document).ready(function(){
-  $("form").submit(fuction(){
-    event.prefentDefault();
+  $("form").submit(function(event){
+    // debugger;
+    event.preventDefault();
     //.toggle + css display:none here?
-    var userInput = $(#numberInput).val();  //does this need parseInt?
+    var userInput = parseInt($("input#numberInput").val());  //does this need parseInt?
+    console.log(userInput);
     //run the function
-    var finalResults = pingPongResults.join("");
-    $("#result").append(finalResults);
+    $("#result").append(userInput);
+    // var finalResults = pingPongResults.join("");
+    // $("#result").append(finalResults);
   });
 });

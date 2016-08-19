@@ -2,28 +2,32 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
-      <script src="js/jquery-3.1.0.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+      <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
       <title>Table Tennis Hijinks!</title>
     </head>
     <body>
-      <h1>Table Tennis Hijinks!</h1><hr>
       <div class="container">
-        <h2>Instructions here (w/ an ul)</h2>
-          <ul>Rules</ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <h1 class"text-hue">Table Tennis Hijinks!</h1><hr>
+        <h2 class"text-hue">Are you reaaaaaady to rummmmbleeeee!</h2>
+        <h3 class"text-hue">Enter in any number and it will play "ping-pong" with itself.</h3>
+          <ul>Psst! (how the patented secret math of this game works...):</ul>
+            <li>Any number that devides evenly into 3 is written as "ping"</li>
+            <li>Any number that devides evenly into 5 is written as "ping"</li>
+            <li>Any number that devides evenly into BOTH (aka 15) is written as "pingpong"</li>
+        <p class"text-hue">Now, using our patented technological math wizardry, brought to you by Snake Oil Tech, LLC, you can tell all your friends that you excersize by playing Table Tennis with yourself!  You are so fast you can now wear that headband 24/7 with impunity!  It's fizzbang-erific!</p>
         <form>
           <div class="form-group">
           <label for="numberInput">Enter your number here:</label>
-          <input id="numberInput" type="number" required="required">
+          <input type="number" class="form-control"  id="numberInput" required="required">
           </div>
           <button type="submit" class="btn btn-lg btn-success">Calculate</button>
         </form>
-        <div id="result"></div>
+        <div>
+          <h4 class"text-hue" id="result"></h4>
+        </div>
       </div>
     </body>
   </html>
