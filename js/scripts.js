@@ -2,7 +2,7 @@
 var pingPongResults = [];
 var counter = function(_numberFromUser) {
   // debugger;
-  for (i = 0; i <= _numberFromUser; i++) {
+  for (i = 1; i <= _numberFromUser; i++) {
     if (i % 15 === 0) {
       pingPongResults.push("Ping-Pong! Aha! ");
     } else if (i % 5 === 0) {
@@ -18,12 +18,19 @@ var counter = function(_numberFromUser) {
 // User Interface Logic
 $(document).ready(function(){
   $("form").submit(function(event){
-    // debugger;
+    debugger;
     event.preventDefault();
-    //.toggle + css display:none here?
+    $("#result").hide();
     var userInput = parseInt($("input#numberInput").val());
+    if ((userInput < 0) || (userInput === 0)) {
+      alert("Sorry, Fizzbang, zeros and negative numbers don't work 'between the lines' of the court, if you know what I mean. We only keep it POSITIVE around here!  Have another go.");
+    } else {
     counter(userInput);
+    }
     console.log(pingPongResults);
     $("#result").prepend(pingPongResults);
+    $("#result").show();
+    pingPongResults.length = 0;  /*this is biz logic, but I could not get the last results to erase for the next number to be inputted.*/
+    console.log(pingPongResults);
   });
 });

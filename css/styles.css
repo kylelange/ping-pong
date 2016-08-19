@@ -5,6 +5,13 @@ body {
   origin background-size: cover;
   background-size: cover;
   color: #1a1a1a;
+  font-family:  'lato', sans-serif;
+}
+
+h1 {
+  font-family: 'strait', sans-serif;
+  font-weight: bolder;
+  text-align: center;
 }
 
 ul {
@@ -46,6 +53,10 @@ p {
   max-height: 320px;
   float:right;
   -webkit-filter:grayscale(50%);
+}
+
+#result {
+  display: none;
 }
 
 /*Media Queries**********************/
