@@ -1,12 +1,12 @@
-# An Epicodus Track Selector
+# Table Tennis Hijinks!
 
-#### helping students select their classes: since 2016.
+#### helping people pretend to play sports with math: since 2016.
 
 #### by Kyle Lange + (http://github.com/kylelange)
 
 ## Description
 
-_{This is a form to help current and future Epicodus students select the programming track that feels most interesting and comforting for them so that internal motivation can thrive. [see it live, here:] (https://kylelange.github.io/ping-pong/)}_
+_{This is a silly table tennis game that uses numbers divisible by 3,5, and 15 to simulate a game of ping pong. [see it live, here:] (https://kylelange.github.io/ping-pong/)}_
 
 ## Setup/Installation Requirements
 
@@ -19,7 +19,7 @@ _{This is a form to help current and future Epicodus students select the program
 
 ## Known Bugs
 
-_There are no known bugs in this program as of Aug. 12, 2016_
+_There are no known bugs in this program as of Aug. 19, 2016_
 
 ## Support and Contact Details
 
@@ -37,7 +37,7 @@ _Any issues with this site, please [e-mail me] (baronsintrees@gmail.com) here._
 1. The program will accept user input and display each number in the set via .append after running through a for loop that will.  This UI logic is first because we, as students, do not have enough console knowledge to forgo applying UI logic first
   * _Input: 3_
   * _Output: 1,2,3_
-2.The program will accept user input and display "ping pong" for numbers divisible by 15 via a for loop with an if statement set to: userInput % 15 === 0 (medulo is = 0, therefor the # has no remainder and is divisible by 15).
+2.The program will accept user input and display "Ping Pong" for numbers divisible by 15 via a for loop with an if statement set to: userInput % 15 === 0 (medulo is = 0, therefor the # has no remainder and is divisible by 15).
   * _Input: 15_
   * _Output: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,ping pong_
 3.The program will accept user input and display "pong" for numbers divisible by 5 via the same for loop with an else if statement set to: userInput % 5 === 0 (medulo is = 0, therefor the # has no remainder and is divisible by 5).
