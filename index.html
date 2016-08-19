@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta charset="UTF-8">
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
       <link href="css/styles.css" rel="stylesheet" type="text/css">
       <script src="js/jquery-3.1.0.js"></script>
       <script src="js/scripts.js"></script>
-      <title>Template</title>
+      <title>Table Tennis Hijinks!</title>
     </head>
     <body>
-      <h1></h1>
-      <div>
+      <h1>Table Tennis Hijinks!</h1><hr>
+      <div class="container">
+        <h2>Instructions here (w/ an ul)</h2>
+          <ul>Rules</ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        <form>
+          <div class="form-group">
+          <label for="numberInput">Enter your number here:</label>
+          <input id="numberInput" type="number" required="required">
+          </div>
+          <button type="submit" class="btn btn-lg btn-success">Calculate</button>
+        </form>
+        <div id="result"></div>
       </div>
-      <div></div>
-      <div></div>
     </body>
   </html>
