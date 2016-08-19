@@ -4,12 +4,13 @@ body {
   background: url(../img/tennis.jpeg) no-repeat center center fixed;
   origin background-size: cover;
   background-size: cover;
+  color: #262626;
+}
+
+
 
 /*Class Selectors********************/
 
-.text-hue {
-  color: grey;
-}
 
 /*Id Selectors***********************/
 
