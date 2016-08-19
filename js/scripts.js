@@ -5,12 +5,11 @@ var counter = function(_numberFromUser) {
   for (i = 0; i <= _numberFromUser; i++) {
     if (i % 15 === 0) {
       pingPongResults.push("Ping-Pong! Aha! ");
+    } else if (i % 5 === 0) {
+      pingPongResults.push("Pong! ");
+    } else if (i % 3 === 0) {
+      pingPongResults.push("Ping! ");
     }
-    // else if () {
-    //
-    // } else if () {
-    //
-    // }
      else {
       pingPongResults.push(i + " ");
     }
@@ -25,8 +24,6 @@ $(document).ready(function(){
     //.toggle + css display:none here?
     var userInput = parseInt($("input#numberInput").val());  //does this need parseInt?
     counter(userInput);
-    // $("#result").prepend(userInput);  -step 1 output.
-    // var finalResults = pingPongResults();
     console.log(pingPongResults);
     $("#result").prepend(pingPongResults);
   });
