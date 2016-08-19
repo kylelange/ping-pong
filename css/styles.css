@@ -60,3 +60,30 @@ p {
 }
 
 /*Media Queries**********************/
+
+@media only screen and (max-width:1200px) {
+  p {
+    padding: 100px 25px 25px 0;
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  #easy-tennis{
+    float: none;
+  }
+  p {
+    padding: 25px 25px 25px 0;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  #easy-tennis {
+    max-width: 320px;
+    max-height: 240px;
+  }
+  
+  p {
+    padding: 25px 25px 25px 0;
+  }
+}
