@@ -30,7 +30,7 @@ $(document).ready(function(){
       $("#result").append("<li>" + _bizInput + "</li>")
     });
     $("#result").show();
-    pingPongResults.length = 0;  /*this is biz logic, but I could not get the last results to erase for the next number to be inputted.*/
+    /*pingPongResults.length = 0;  --this is biz logic, but I could not get the last results to erase for the next number to be inputted. So I decided to cut this for now.*/
     console.log(pingPongResults);
   });
 });
