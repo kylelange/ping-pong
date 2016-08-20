@@ -14,7 +14,6 @@ var counter = function(_numberFromUser) {
     }
   }
 };
-
 // User Interface Logic
 $(document).ready(function(){
   $("form").submit(function(event){
@@ -27,12 +26,9 @@ $(document).ready(function(){
     } else {
     counter(userInput);
     }
-    // console.log(pingPongResults);
-
     var liOutput = pingPongResults.forEach(function(_bizInput){
       $("#result").append("<li>" + _bizInput + "</li>")
     });
-
     $("#result").show();
     pingPongResults.length = 0;  /*this is biz logic, but I could not get the last results to erase for the next number to be inputted.*/
     console.log(pingPongResults);
