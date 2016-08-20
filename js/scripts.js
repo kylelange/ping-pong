@@ -10,7 +10,7 @@ var counter = function(_numberFromUser) {
     } else if (i % 3 === 0) {
       pingPongResults.push("Ping! ");
     } else {
-      pingPongResults.push(i + " ");
+      pingPongResults.push(i);
     }
   }
 };
@@ -18,7 +18,7 @@ var counter = function(_numberFromUser) {
 // User Interface Logic
 $(document).ready(function(){
   $("form").submit(function(event){
-    debugger;
+    // debugger;
     event.preventDefault();
     $("#result").hide();
     var userInput = parseInt($("input#numberInput").val());
@@ -27,8 +27,12 @@ $(document).ready(function(){
     } else {
     counter(userInput);
     }
-    console.log(pingPongResults);
-    $("#result").prepend(pingPongResults);
+    // console.log(pingPongResults);
+
+    var liOutput = pingPongResults.forEach(function(_bizInput){
+      $("#result").append("<li>" + _bizInput + "</li>")
+    });
+
     $("#result").show();
     pingPongResults.length = 0;  /*this is biz logic, but I could not get the last results to erase for the next number to be inputted.*/
     console.log(pingPongResults);
