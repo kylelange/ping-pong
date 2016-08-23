@@ -19,7 +19,8 @@ $(document).ready(function(){
   $("form").submit(function(event){
     // debugger;
     event.preventDefault();
-    $("#result").hide();
+    pingPongResults = [];
+    $("#result").hide().empty();
     var userInput = parseInt($("input#numberInput").val());
     if ((userInput < 0) || (userInput === 0)) {
       alert("Sorry, Fizzbang, zeros and negative numbers don't work 'between the lines' of the court, if you know what I mean. We only keep it POSITIVE around here!  Have another go.");
@@ -30,7 +31,6 @@ $(document).ready(function(){
       $("#result").append("<li>" + _bizInput + "</li>")
     });
     $("#result").show();
-    /*pingPongResults.length = 0;  --this is biz logic, but I could not get the last results to erase for the next number to be inputted. So I decided to cut this for now.*/
     console.log(pingPongResults);
   });
 });
