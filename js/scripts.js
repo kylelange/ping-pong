@@ -13,11 +13,13 @@ var counter = function(numberFromUser) {
       pingPongResults.push(i);
     }
   }
+  console.log(pingPongResults);
   return pingPongResults;
 };
 // User Interface Logic
 $(document).ready(function(){
   $("form").submit(function(event){
+    debugger;
     event.preventDefault();
     var userInput = parseInt($("input#numberInput").val());
     if ((userInput < 0) || (userInput === 0)) {
