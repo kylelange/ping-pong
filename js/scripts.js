@@ -19,7 +19,6 @@ var counter = function(numberFromUser) {
 // User Interface Logic
 $(document).ready(function(){
   $("form").submit(function(event){
-    debugger;
     event.preventDefault();
     var userInput = parseInt($("input#numberInput").val());
     if ((userInput < 0) || (userInput === 0)) {
@@ -27,7 +26,7 @@ $(document).ready(function(){
     } else {
     var resultsArray = counter(userInput);
     }
-    var liOutput = pingPongResults.forEach(function(bizInput){
+    var liOutput = resultsArray.forEach(function(bizInput){
       $("#result").append("<li>" + bizInput + "</li>")
     });
     $("#result").show();
