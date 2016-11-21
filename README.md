@@ -6,20 +6,26 @@
 
 ## Description
 
-_{This is a silly table tennis game that uses numbers divisible by 3,5, and 15 to simulate a game of ping pong. [see it live, here:] (https://kylelange.github.io/ping-pong/)}_
+_This is a silly table tennis game that uses numbers divisible by 3,5, and 15 to simulate a game of ping pong. [see it live, here:] (https://kylelange.github.io/ping-pong/)_
+
+#### By _**Kyle Lange**_
+_
+
+![screenshot](Screen Shot.png)
+
+## Description
 
 ## Setup/Installation Requirements
 
-* _clone the repository_
-* _use Git Clone in your terminal and make sure to link to my [github site] (http://github.com/kylelange)_
-* _check your git log to see all of my commits!_
-* _use git remote -v to make sure you are the origin user_
-* _don't forget to open atom with: atom ._
+1. Download this repo using your terminal: git clone repo-name pasted here
 
+2. View the code by drag-and-dropping the file into your [favorite text editor](https://atom.io)
+
+3. run/check-out the program by dropping the index/html file from your folder into your web browser
 
 ## Known Bugs
 
-_There are no known bugs in this program as of Aug. 19, 2016_
+_There are no known bugs as of the last commit. Please send an ISSUE on github in the repository if you see something I have not._
 
 ## Support and Contact Details
 
